@@ -1,0 +1,19 @@
+node --version
+npm --version
+npm init
+npm i __________// install node modules
+
+npm install package --save __________// --save is use for save record in dependencies
+exapmle :-
+npm install express --save / npm i express
+-----------
+
+npm i -g package __________// -g is use for declare for module globaly you can acces everypackages
+npm install --save-dev nodemon __________// --save-dev is use for use package only development time
+npm uninstall nodemon __________// use for uninstall packages
+
+package.json __________// store dependencies
+package.lock.json __________// sore dependencies tree
+
+const os = require('os') __________// build in module so we are not using ./
+const variable name = require('./secound') __________// user define module so we are using ./
