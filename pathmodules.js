@@ -1,7 +1,7 @@
 const path = require('path')
-const a1 = path.basename('C:\\temp\\myfile.html');
-const a2 = path.basename('C:\\temp\\myfile.html');
-console.log(a1)
-console.log(a2)
-const a3 = path.extname(__filename)
-console.log(__filename, a3) // .js
+console.log(path.dirname('D:/PROGRAMMING/GIT CODE/node/pathmodules.js'))
+console.log(path.basename('D:/PROGRAMMING/GIT CODE/node/pathmodules.js'))
+console.log(path.extname('D:/PROGRAMMING/GIT CODE/node/pathmodules.js'))
+
+// all in one 
+console.log(path.parse('D:/PROGRAMMING/GIT CODE/node/pathmodules.js'))
