@@ -1,5 +1,5 @@
 const http = require("http");
-const fs = require("fs");
+// const fs = require("fs");
 
 const hostname = '127.0.0.1' // hostname assigned
 // const port = process.env.PORT; // default port
@@ -16,12 +16,12 @@ const server = http.createServer((req, res) => {
   if (req.url == "/") {
     res.statusCode = 200;
     res.end(
-      "<h1> Hey we are webx grafix</h1><p> we are digital marketing agency based in india<p> "
+      "<h1>I this side Rohit Bhure</h1><p>i am full stack mern developer<p> "
     );
   } else if (req.url == "/about") {
     res.statusCode = 200;
     res.end(
-      "<h1> about webx grafix</h1> <p> we are digital marketing agency based in india<p> "
+      "<h1>about me</h1> <p>i am rohit bhure, from sanawad currently pursing btech of technology in computer science from shivaji rao kadam group of institue of technology indore<p> "
     );
   } else if (req.url == "/team") {
     res.statusCode = 200;
