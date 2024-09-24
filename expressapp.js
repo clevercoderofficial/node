@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const env = require('dotenv').config()
-const db = require('./mongoose')
+const db = require('./lib/db')
 const fs = require('fs')
 const morgan = require('morgan')
 

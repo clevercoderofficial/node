@@ -238,5 +238,245 @@
       "rate": 3.6,
       "count": 145
     }
+  },
+  {
+    "id": 21,
+    "title": "Adidas Men's Basketball Shoes",
+    "price": 89.99,
+    "description": "Experience comfort and style on and off the court with these high-performance basketball shoes.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/adidas-shoes.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 200
+    }
+  },
+  {
+    "id": 22,
+    "title": "Men's Casual Slim Fit Blazer",
+    "price": 49.99,
+    "description": "A stylish and versatile blazer perfect for work or casual outings. Made with breathable fabric.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/blazer.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 150
+    }
+  },
+  {
+    "id": 23,
+    "title": "Luxury Men's Watch",
+    "price": 199.99,
+    "description": "A sophisticated timepiece that combines elegance with functionality. Water-resistant and durable.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/luxury-watch.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 90
+    }
+  },
+  {
+    "id": 24,
+    "title": "Nike Men's Running Shoes",
+    "price": 69.99,
+    "description": "Designed for runners, these shoes provide maximum support and comfort with every step.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/nike-running.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 220
+    }
+  },
+  {
+    "id": 25,
+    "title": "Men's Leather Wallet",
+    "price": 34.99,
+    "description": "Crafted from genuine leather, this wallet is both stylish and functional, with plenty of card slots.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/leather-wallet.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 110
+    }
+  },
+  {
+    "id": 26,
+    "title": "Slim Fit Casual Pants",
+    "price": 39.99,
+    "description": "Comfortable and stylish, these pants are perfect for both work and play.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/slim-fit-pants.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 125
+    }
+  },
+  {
+    "id": 27,
+    "title": "Classic Men's Sunglasses",
+    "price": 19.99,
+    "description": "Stylish and UV-protected sunglasses for every occasion.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/sunglasses.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 300
+    }
+  },
+  {
+    "id": 28,
+    "title": "Men's Leather Belt",
+    "price": 25.99,
+    "description": "A classic leather belt that adds a touch of sophistication to any outfit.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/leather-belt.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 180
+    }
+  },
+  {
+    "id": 29,
+    "title": "Sports Wristwatch",
+    "price": 45.99,
+    "description": "Durable and water-resistant, perfect for outdoor activities and sports.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/sports-watch.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 60
+    }
+  },
+  {
+    "id": 30,
+    "title": "Men's Knit Sweater",
+    "price": 39.99,
+    "description": "Soft and warm knit sweater ideal for chilly days.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/knit-sweater.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 175
+    }
+  },
+  {
+    "id": 31,
+    "title": "Men's Sporty Jacket",
+    "price": 74.99,
+    "description": "Lightweight and stylish jacket for casual and sporty looks.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/sporty-jacket.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 90
+    }
+  },
+  {
+    "id": 32,
+    "title": "Men's Casual Dress Shirt",
+    "price": 35.99,
+    "description": "Perfect for both formal and informal occasions, this shirt adds elegance to your wardrobe.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/dress-shirt.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 220
+    }
+  },
+  {
+    "id": 33,
+    "title": "Running Shorts for Men",
+    "price": 24.99,
+    "description": "Comfortable and breathable shorts designed for running and fitness activities.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/running-shorts.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 130
+    }
+  },
+  {
+    "id": 34,
+    "title": "Men's Waterproof Rain Jacket",
+    "price": 69.99,
+    "description": "Stay dry with this waterproof rain jacket featuring a hood and adjustable cuffs.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/rain-jacket.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 145
+    }
+  },
+  {
+    "id": 35,
+    "title": "Men's Classic Chinos",
+    "price": 49.99,
+    "description": "Stylish chinos that offer both comfort and a classic look.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/chinos.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 210
+    }
+  },
+  {
+    "id": 36,
+    "title": "Stylish Backpack for Men",
+    "price": 59.99,
+    "description": "Durable and spacious backpack perfect for school, work, or travel.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/backpack.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 80
+    }
+  },
+  {
+    "id": 37,
+    "title": "Leather Dress Shoes",
+    "price": 89.99,
+    "description": "Formal leather shoes that provide a classic and sophisticated look.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/leather-shoes.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 100
+    }
+  },
+  {
+    "id": 38,
+    "title": "Men's Running Tank Top",
+    "price": 19.99,
+    "description": "Lightweight tank top designed for maximum comfort while running.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/running-tank.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 95
+    }
+  },
+  {
+    "id": 39,
+    "title": "Men's Camo Cargo Shorts",
+    "price": 29.99,
+    "description": "Casual cargo shorts with multiple pockets, perfect for outdoor activities.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/camo-shorts.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 115
+    }
+  },
+  {
+    "id": 40,
+    "title": "Men's Classic Fedora Hat",
+    "price": 19.99,
+    "description": "A stylish fedora hat to complete your look for any occasion.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/fedora-hat.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 75
+    }
   }
 ]
