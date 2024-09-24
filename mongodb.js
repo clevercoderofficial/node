@@ -1,8 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
+reqrire('dotenv').config()
 
-const url = "mongodb://localhost:27017/admin";
-
-MongoClient.connect(url, function (err, db) {
+MongoClient.connect(process.env.MONGODB_CONNECT, (err, db) => {
   if (err) throw err;
   console.log("Database created!");
   db.close();
