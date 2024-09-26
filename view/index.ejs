@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #b12704;
+        }
+
+        .description {
+            margin: 20px 0;
+        }
+
+        .rating {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .category {
+            background-color: #e0e0e0;
+            padding: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <% for(let product of products) { %>
+        <% if(product) { %>
+            <div class="container">
+                <h1>
+                    <%= product.title %>
+                </h1>
+                <img src="<%= product.image %>" alt="<%= product.title %>">
+
+                <p class="price">$<%= product.price %></p>
+                <p class="description">
+                    <%= product.description %>
+                </p>
+
+                <p class="category">
+                    Category: <%= product.category %>
+                </p>
+
+                <div class="rating">
+                    Rating: <%= product.rating.rate %> (Based on <%= product.rating.count %> reviews)
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+</body>
+
+</html>

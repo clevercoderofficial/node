@@ -1,4 +1,6 @@
 const Product = require('../lib/model/product'); // Assuming the model is defined in a file named Product.js
+const ejs = require('ejs')
+const path = require('path')
 
 // Model.deleteMany()
 // Model.deleteOne()
@@ -15,27 +17,58 @@ const Product = require('../lib/model/product'); // Assuming the model is define
 // Model.updateMany()
 // Model.updateOne()
 
+exports.getAllProductsSSR = async (req, res) => {
+    try {
+        const products = await Product.find({});
+        ejs.renderFile(path.resolve(__dirname, '../view/index.ejs'), { products: products }, function (err, str) {
+            if (err) {
+                return res.status(500).send('Error rendering EJS template');
+            }
+            res.send(str);
+        });
+    } catch (error) {
+        res.status(500).send('Error fetching products');
+    }
+};
+
 // CREATE Post /products
-exports.createproducts = (req, res) => {
-    const product = new Product(req.body);
-    product.save((err, data) => {
-        console.log({ err, data })
+exports.createproducts = async (req, res) => {
+    try {
+        const product = new Product(req.body);
+        const data = await product.save();
+        console.log({ data });
         res.json(data);
-    });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Error creating product' });
+    }
 };
 
 // READ Get /products
 exports.getproducts = async (req, res) => {
-    const product = await Product.find();
-    res.json(product)
-}
+    try {
+        const products = await Product.find({});
+        res.json(products);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Error fetching products' });
+    }
+};
 
 // READ Get /products/:id
 exports.getproduct = async (req, res) => {
-    const id = req.params.id
-    const product = await Product.findById(id)
-    res.json(product)
-}
+    try {
+        const id = req.params.id;
+        const product = await Product.findById(id);
+        if (!product) {
+            return res.status(404).json({ error: 'Product not found' });
+        }
+        res.json(product);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Error fetching product' });
+    }
+};
 
 // UPDATE PUT /products/:id
 exports.replaceproduct = async (req, res) => {
@@ -49,7 +82,7 @@ exports.replaceproduct = async (req, res) => {
 };
 
 // UPDATE PATCH /products/:id
-exports.updateproduct = async(req, res) => {
+exports.updateproduct = async (req, res) => {
     const id = req.params.id;
     try {
         const product = await Product.findOneAndUpdate({ _id: id }, req.body, { new: true })
