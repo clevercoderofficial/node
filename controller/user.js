@@ -13,7 +13,7 @@ exports.createUser = async (req, res) => {
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Error creating user' });
-    } 
+    }
 };
 
 // READ - GET /users
@@ -31,7 +31,7 @@ exports.getUsers = async (req, res) => {
 exports.getUser = async (req, res) => {
     try {
         const id = req.params.id;
-        const user = await User.findById(id);
+        const user = await User.findById(id).populate('cart');
         if (!user) {
             return res.status(404).json({ error: 'User not found' });
         }
